@@ -2,6 +2,7 @@ import argparse
 import hashlib
 import random
 import string
+import os
 
 def generate_password(lower, upper, digits, special):
     password = ''.join(random.choice(string.ascii_lowercase) for _ in range(lower))
@@ -45,7 +46,7 @@ def main():
         digits = int(input("Enter the number of digits: "))
         special = int(input("Enter the number of special characters: "))
     else:
-        print("[red]Invalid choice![/red]")
+        print("Invalid choice!")
         return
 
     password = generate_password(lower, upper, digits, special)
@@ -53,6 +54,11 @@ def main():
 
     print(f"Password: {password}")
     print(f"Hashed Password: {hashed_password}")
+    
+def clear_command_line():
+        os.system('cls' if os.name == 'nt' else 'clear')
 
 if __name__ == "__main__":
+    clear_command_line()
     main()
+
