@@ -5,4 +5,4 @@ FEATURES:
 1. fast generate - will generate the strongest password in ONE CLICK
 2. personalized - will ask you to change some configurations to personalize the password (will still be strong)
 
-NOTE: Will show the hashes passwords even if you didn't need to know that asjdhakjs
+NOTE: Will show the hashed passwords even if you didn't need to know that asjdhakjs
