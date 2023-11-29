@@ -51,8 +51,8 @@ def main():
     password = generate_password(lower, upper, digits, special)
     hashed_password = hash_password(password)
 
-    print(f"[green]Password: {password}")
-    print(f"[red]Hashed Password: {hashed_password}")
+    print(f"Password: {password}")
+    print(f"Hashed Password: {hashed_password}")
 
 if __name__ == "__main__":
     main()
